@@ -2,3 +2,13 @@
     position: sticky;
     top: 0;
 }
+
+.btn-clear {
+    background-color: rgb(243, 36, 36);
+    padding: .5rem 1rem;
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}

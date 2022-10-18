@@ -1,0 +1,46 @@
+.order-item-container {
+    display: flex;
+    gap: 17px;
+    padding: 8px;
+    border: 1px solid #95A0A7;
+    width: 30rem;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+.item-details-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-details-container p {
+    margin: 0;
+}
+
+.order-item-container img {
+    width: 90px;
+}
+
+.btn-delete {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: rgba(235, 87, 87, 0.3);
+    border: 0;
+    cursor: pointer;
+    transition: all .2s;
+
+}
+
+.btn-delete:hover {
+    background-color: rgba(235, 87, 87, 0.5);
+}
+
+
+.delete-icon {
+    color: rgba(235, 87, 87, 1);
+    font-size: 31px;
+
+}

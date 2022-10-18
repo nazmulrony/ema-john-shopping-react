@@ -1,5 +1,5 @@
 .header {
-    height: 80px;
+    height: 60px;
     background-color: #1C2B35;
     display: flex;
     align-items: center;
@@ -20,4 +20,23 @@
 
 .header a:hover {
     color: orange;
+}
+
+.active {
+    color: red !important;
+}
+
+.user {
+    color: #f8f8f8;
+    margin: 0 10px;
+    border: 1px solid #f8f8f8;
+    border-radius: 8px;
+    padding: 2px 8px;
+}
+
+.btn-singout {
+    border-radius: 5px;
+    padding: 3px 10px;
+    border: none;
+    cursor: pointer;
 }
