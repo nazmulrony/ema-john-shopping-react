@@ -4,7 +4,7 @@ import { AuthContext } from '../../contexts/UserContext';
 import './Login.css'
 
 const Login = () => {
-    const { signIn } = useContext(AuthContext);
+    const { signIn, signInWithGoogle } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
     console.log(location);
@@ -48,7 +48,7 @@ const Login = () => {
 
                 </div>
             </form >
-            <button className='btn-google'><i className="fab fa-google fa-2x"></i> Continue with Google</button>
+            <button onClick={signInWithGoogle} className='btn-google'><i className="fab fa-google fa-2x"></i> Continue with Google</button>
 
         </div >
     );

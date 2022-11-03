@@ -8,8 +8,9 @@ import OrderItem from '../OrderItem/OrderItem';
 const Orders = () => {
     const { products, initialCart } = useLoaderData();
     const [cart, setToCart] = useState(initialCart);
+    console.log(cart);
     const handleRemove = id => {
-        const remaining = cart.filter(product => product.id !== id);
+        const remaining = cart.filter(product => product._id !== id);
         setToCart(remaining);
         removeFromDb(id);
     }
@@ -24,7 +25,7 @@ const Orders = () => {
             <div className="orders-container">
                 {
                     cart.map(product => <OrderItem
-                        key={product.id}
+                        key={product._id}
                         product={product}
                         handleRemove={handleRemove}
                     />)
